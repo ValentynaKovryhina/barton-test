@@ -50,6 +50,8 @@ body {
 
 .site-header__menu {
     list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     gap: 30px;
 }
@@ -61,6 +63,8 @@ body {
 .button {
     background: var(--color-accent);
     text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     line-height: 1;
     text-transform: uppercase;
@@ -68,6 +72,8 @@ body {
 
 /*opacity hover effect*/
 .hover {
+    -webkit-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
 }
 
@@ -83,7 +89,9 @@ body {
 .image-cover img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
