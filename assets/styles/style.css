@@ -1,0 +1,150 @@
+:root {
+    --color-background: #333333;
+    --add-color-background: #1f464e;
+    --color-text: #fff;
+    --color-accent: #3497a6;
+}
+
+/* typography */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+    font-style: normal;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+body {
+    background: var(--color-background, #333333);
+}
+
+.site-header {
+    background: var(--add-color-background);
+}
+
+.site-header__menu {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.site-header__menu a {
+    text-transform: uppercase;
+}
+
+.button {
+    background: var(--color-accent);
+    text-decoration: none;
+    display: inline-flex;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/*opacity hover effect*/
+.hover {
+    transition: opacity 0.4s ease;
+}
+
+.hover:hover {
+    opacity: 0.8;
+}
+
+/*cover image style*/
+.image-cover {
+    position: relative;
+}
+
+.image-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*overlay for images*/
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+/*additional margin*/
+.mt-100 {
+    margin-top: 100px;
+}
+
+.intro-section__image {
+    height: 100%;
+}
+
+.portfolio-card {
+    background: var(--color-accent);
+    height: 100%;
+}
+
+.portfolio-card__image {
+    width: 100%;
+    padding-top: 66.67%;
+    overflow: hidden;
+}
+
+.portfolio-card__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*decorative frame on image*/
+.portfolio-card__image:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    border: 1px solid var(--color-text);
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+@media (max-width: 767.98px) {
+    .mt-100 {
+        margin-top: 50px;
+    }
+}
