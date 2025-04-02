@@ -78,15 +78,6 @@ This project uses the **BEM (Block Element Modifier)** methodology to keep the c
 
 ---
 
-## ✅ To Do (Optional Enhancements)
-
-- Add animations/transitions for smoother UX
-- Refactor sections as Bootstrap components (e.g. cards)
-- Improve accessibility (`aria-*`, roles, keyboard focus styles)
-- Add a contact form or project filter
-
----
-
 ## 📝 License
 
 This project is free to use and modify for personal or educational purposes.
