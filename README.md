@@ -1,6 +1,6 @@
-# My Starter Page
+# Test task
 
-A simple responsive portfolio-style landing page built with **Bootstrap** and **custom SCSS/CSS** using the **BEM (Block Element Modifier)** naming convention.
+A simple responsive portfolio-style landing page built with **Bootstrap** and **custom CSS** using the **BEM (Block Element Modifier)** naming convention.
 
 ---
 
